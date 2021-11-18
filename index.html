@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css" />
+    <!-- 'classic' theme -->
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Etch a Sketch</title>
+</head>
+
+<body>
+    <main>
+        <h2 class="title">Etch a Sketch <span class="smallText"> 
+            (Developed By Kanu Mike Chibundu)
+        </span> </h2>
+
+        <div class="adjustbtn">
+            <button id="enterSquare">Enter a new brush size</button>
+            <div class="colorContainer">
+                <div class="colorChoice">
+                    <label for="color"> Select Color</label>
+                    <div class="color-picker"></div>
+                </div>
+
+            </div>
+            <div class="colorSelected">
+                <div class="textColorSelect"> Selected Color</div>
+                <div class="color-selected"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="draw">Draw</button>
+            <button id="eraser">Eraser</button>
+            <button id="clean">Clear</button>
+            <button id="randomColor">Random</button>
+
+        </div>
+
+
+        <div class="sketchPad">
+
+        </div>
+        <div class="odin"> <a href="https://www.theodinproject.com/">Odin Project  </a> in conjuction with <a href="https://www.microverse.org/?grsf=9k338z"> microverse</a> </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js" defer></script>
+
+</body>
+
+</html>

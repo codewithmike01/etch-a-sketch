@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5.h6,
+div {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(204, 198, 198, 0.4);
+}
+
+.title {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.smallText {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+}
+
+.sketchPad {
+    background-color: white;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 453px;
+    width: 500px;
+    overflow: hidden;
+    margin: 25px auto;
+    margin-bottom: 15px;
+    border: 2px solid rgba(201, 200, 200, 0.3);
+}
+
+.odin {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.controls {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.adjustbtn {
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#enterSquare {
+    text-align: center;
+    max-width: 50%;
+    margin-top: 20px;
+}
+
+.colorSelected {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.color-selected {
+    width: 28px;
+    height: 27px;
+}
+
+.textColorSelect {
+    width: 60px;
+}
+
+.colorChoice {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 32px;
+    z-index: 10;
+}
+
+button {
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.color-picker {
+    color: green;
+}
