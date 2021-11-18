@@ -12,10 +12,11 @@ const colorPicker = document.querySelector('.colorChoice');
 
 
 
-
+//To make size global
 let size = 16;
 
 // Simple example, see optional options for more configuration.
+//Simonwep picker library  : https://github.com/Simonwep/pickr
 const pickr = Pickr.create({
     el: '.color-picker',
     theme: 'classic', // or 'monolith', or 'nano'
@@ -47,12 +48,18 @@ const pickr = Pickr.create({
     }
 });
 
+
+
+//main function declaration 
 function createEtch(size = 12, count = 0) {
+
+    //Initail color of brush
     let rgbaColor = 'black';
+
     size = parseInt(size);
     console.log(size)
 
-    //To wipe the Pad click for new grid size
+    //To wipe the Pad clear for new grid size
     if (count !== 0) {
         for (let i = 0; i <= 310; i++) {
             pad.innerHTML = ' ';
@@ -61,10 +68,13 @@ function createEtch(size = 12, count = 0) {
 
     }
 
+    //loop to create the grid pixels
     for (let i = 0; i <= 1700; i++) {
         const box = document.createElement('div');
         box.style.cssText = ` width:${size}px;height:${size}px;flex-grow:1;margin-top:auto;`;
         pad.appendChild(box);
+
+        //Erase Event and draw when Clicked
         eraseBtn.addEventListener('click', () => {
             box.addEventListener('mouseover', () => box.style.backgroundColor = 'white');
             drawBtn.addEventListener('click', () => {
@@ -72,7 +82,7 @@ function createEtch(size = 12, count = 0) {
 
             })
         });
-        //Random Color
+        //Random Color event
         randomColor.addEventListener('click', () => {
             box.addEventListener('mouseover', () => {
                 let colorValueOne = ((Math.random() * 255) - 1);
@@ -82,6 +92,7 @@ function createEtch(size = 12, count = 0) {
             })
         });
 
+        //Color Picker Event
         colorPicker.addEventListener('click', () => {
             console.log('here  here');
             pickr.on('change', (color, source, instance) => {
@@ -93,7 +104,10 @@ function createEtch(size = 12, count = 0) {
             });
         })
 
+        //Initail hover draw effect
         box.addEventListener('mouseover', () => box.style.backgroundColor = `${rgbaColor}`);
+
+        //To clear the drawing pad
         cleanBtn.addEventListener('click', () => box.style.backgroundColor = 'white');
 
     }
@@ -111,7 +125,7 @@ createEtch();
 
 
 
-
+//Enter new Brush Size event
 enterSize.addEventListener('click', () => {
     // const rgbaColor;
     const count = 1;
