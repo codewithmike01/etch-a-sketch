@@ -1,14 +1,17 @@
 # MyPortfolioBlog
 
-This is my personal portfolio Website, which is a work in progress.
+
+This is an Odin project, I built a simulation of Ecth a sketch that enables users to draw on a drawing pad on their browser. I built this using JavaScript
+
+
 
 ## Live Preview
 
-LIVE DEMO: [Myportfolio](https://ginohmk.github.io/MyPortfolioBlog/)
+LIVE DEMO: [Myportfolio](https://ginohmk.github.io/etch-a-sketch/)
 
 ## Built With
 
-- HTML, SASS and Javascript
+- Javascript
 
 ## Getting Started
 
@@ -16,11 +19,11 @@ To get a local copy up and running follow these simple example steps. 👷‍♂
 
 ### Prerequisites
 
-clone repo: `https://github.com/Ginohmk/MyPortfolioBlog.git`
+clone repo: `https://https://github.com/Ginohmk/etch-a-sketch.git`
 
 
 then
-`cd MyPortfolioBlog`
+`cd etch-a-sketch`
 
 ### Install
 
@@ -40,7 +43,7 @@ run `npm install` to install dependencies
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Ginohmk/MyPortfolioBlog/issues)
+Feel free to check the [issues page](https://github.com/Ginohmk/etch-a-sketch/issues)
 
 
 
