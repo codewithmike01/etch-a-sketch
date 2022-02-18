@@ -3,12 +3,14 @@
 
 This is an Odin project, I built a simulation of Ecth a sketch that enables users to draw on a drawing pad on their browser. I built this using JavaScript
 
+![etch a sketch](https://user-images.githubusercontent.com/58771507/154756329-a6ebc66a-34cd-48e1-a842-a80b7f7d1eea.PNG)
 
+<br>
 
 ## Live Preview
 
-LIVE DEMO: 
-[Myportfolio](https://ginohmk.github.io/etch-a-sketch/)
+LIVE DEMO: [Myportfolio](https://ginohmk.github.io/etch-a-sketch/)
+
 
 ## Built With
 
